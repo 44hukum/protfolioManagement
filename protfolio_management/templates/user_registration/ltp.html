@@ -1,0 +1,467 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Share Market</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'user_registration/style/ltp.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4><img src="{%static 'user_registration/style/img/vvv.jpg' %}">Stock M</h4>
+            </div>
+            <div class="topnav" id="myTopnav">
+
+				<a href="/" >Home</a>
+				<a href="/news">NEWS</a>
+				<a href="/applyipo">Help</a>
+				<a href="/about">About Us</a>
+				<a href="/ltp" class="active">LTP</a>
+				<a href="/broker">BROKER HOUSE</a>
+
+
+            </div>
+        </nav>
+
+        <div class="page-header">
+            <h1>**LATEST TRADING PRICES**</h1>
+        </div>
+
+
+
+
+        <div id="ctl00_ContentPlaceHolder1_LiveTrading" class="table">
+            <table class='tables' data-live='live-trading' data-live-label='#live-trading-label-1'>
+                <thead>
+                    <tr>
+                        <th><span>Symbol</span></th>
+                        <th><span>LTP</span></th>
+                        <th><span>LTV</span></th>
+                        <th nowrap><span>% Change</span></th>
+                        <th><span>High</span></th>
+                        <th><span>Low</span></th>
+                        <th><span>Open</span></th>
+                        <th><span>Qty.</span>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=ACLBSL'
+                                title='ACLBSL (Aarambha Chautari Laghubitta Bittiya Sanstha Limited)'>ACLBSL</a></td>
+                        <td class='text-right'>1,630.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>0.74</td>
+                        <td class='text-right'>1,665.00</td>
+                        <td class='text-right'>1,600.00</td>
+                        <td class='text-right'>1,610.00</td>
+                        <td class='text-right'>3,323</td>
+                    </tr>
+                    <tr class='nochange-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=ADBL'
+                                title='ADBL (Agriculture Development Bank Limited)'>ADBL</a></td>
+                        <td class='text-right'>419.00</td>
+                        <td class='text-right'>39</td>
+                        <td class='text-right'>0</td>
+                        <td class='text-right'>421.00</td>
+                        <td class='text-right'>418.00</td>
+                        <td class='text-right'>420.00</td>
+                        <td class='text-right'>43,764</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=ADBLD83'
+                                title='ADBLD83 (10.35% Agricultural Bank Debenture 2083)'>ADBLD83</a></td>
+                        <td class='text-right'>1,075.00</td>
+                        <td class='text-right'>50</td>
+                        <td class='text-right'>0.47</td>
+                        <td class='text-right'>1,075.00</td>
+                        <td class='text-right'>1,075.00</td>
+                        <td class='text-right'>1,075.00</td>
+                        <td class='text-right'>50</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=AHPC'
+                                title='AHPC (Arun Valley Hydropower Development Co. Ltd.)'>AHPC</a></td>
+                        <td class='text-right'>313.00</td>
+                        <td class='text-right'>150</td>
+                        <td class='text-right'>2.62</td>
+                        <td class='text-right'>318.00</td>
+                        <td class='text-right'>300.00</td>
+                        <td class='text-right'>305.00</td>
+                        <td class='text-right'>309,426</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=AIL'
+                                title='AIL (AJOD Insurance Limited)'>AIL</a></td>
+                        <td class='text-right'>852.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>1.91</td>
+                        <td class='text-right'>872.00</td>
+                        <td class='text-right'>840.00</td>
+                        <td class='text-right'>840.00</td>
+                        <td class='text-right'>45,588</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=AKJCL'
+                                title='AKJCL (Ankhu Khola Jalvidhyut Company Ltd)'>AKJCL</a></td>
+                        <td class='text-right'>205.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>9.63</td>
+                        <td class='text-right'>205.00</td>
+                        <td class='text-right'>182.00</td>
+                        <td class='text-right'>196.00</td>
+                        <td class='text-right'>106,163</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=AKPL'
+                                title='AKPL (Arun Kabeli Power Ltd.)'>AKPL</a></td>
+                        <td class='text-right'>362.00</td>
+                        <td class='text-right'>30</td>
+                        <td class='text-right'>2.55</td>
+                        <td class='text-right'>365.00</td>
+                        <td class='text-right'>352.00</td>
+                        <td class='text-right'>355.00</td>
+                        <td class='text-right'>599,643</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=ALBSL'
+                                title='ALBSL (Asha Laghubitta Bittiya Sanstha Ltd)'>ALBSL</a></td>
+                        <td class='text-right'>1,836.00</td>
+                        <td class='text-right'>12</td>
+                        <td class='text-right'>-0.86</td>
+                        <td class='text-right'>1,867.00</td>
+                        <td class='text-right'>1,823.00</td>
+                        <td class='text-right'>1,852.00</td>
+                        <td class='text-right'>7,156</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=ALICL'
+                                title='ALICL (Asian Life Insurance Co. Limited)'>ALICL</a></td>
+                        <td class='text-right'>1,290.00</td>
+                        <td class='text-right'>20</td>
+                        <td class='text-right'>0.7</td>
+                        <td class='text-right'>1,290.00</td>
+                        <td class='text-right'>1,280.00</td>
+                        <td class='text-right'>1,281.00</td>
+                        <td class='text-right'>12,414</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=API'
+                                title='API (Api Power Company Ltd.)'>API</a></td>
+                        <td class='text-right'>313.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>-0.32</td>
+                        <td class='text-right'>320.00</td>
+                        <td class='text-right'>311.00</td>
+                        <td class='text-right'>318.00</td>
+                        <td class='text-right'>234,461</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=BARUN'
+                                title='BARUN (Barun Hydropower Co. Ltd.)'>BARUN</a></td>
+                        <td class='text-right'>295.00</td>
+                        <td class='text-right'>200</td>
+                        <td class='text-right'>4.24</td>
+                        <td class='text-right'>298.00</td>
+                        <td class='text-right'>280.00</td>
+                        <td class='text-right'>283.00</td>
+                        <td class='text-right'>162,716</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=BBC'
+                                title='BBC (Bishal Bazar Company Limited)'>BBC</a></td>
+                        <td class='text-right'>5,924.00</td>
+                        <td class='text-right'>5</td>
+                        <td class='text-right'>9.99</td>
+                        <td class='text-right'>5,924.00</td>
+                        <td class='text-right'>5,493.00</td>
+                        <td class='text-right'>5,493.00</td>
+                        <td class='text-right'>8,719</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=BFC'
+                                title='BFC (Best Finance Company Ltd.)'>BFC</a></td>
+                        <td class='text-right'>206.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>9.57</td>
+                        <td class='text-right'>206.00</td>
+                        <td class='text-right'>186.00</td>
+                        <td class='text-right'>188.00</td>
+                        <td class='text-right'>249,083</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=BNT'
+                                title='BNT (Bottlers Nepal (Terai) Limited)'>BNT</a></td>
+                        <td class='text-right'>11,650.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>5.23</td>
+                        <td class='text-right'>12,178.00</td>
+                        <td class='text-right'>11,235.00</td>
+                        <td class='text-right'>11,624.00</td>
+                        <td class='text-right'>3,328</td>
+                    </tr>
+                    <tr class='nochange-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=BOKL'
+                                title='BOKL (Bank of Kathmandu Ltd.)'>BOKL</a></td>
+                        <td class='text-right'>312.00</td>
+                        <td class='text-right'>616</td>
+                        <td class='text-right'>0</td>
+                        <td class='text-right'>315.00</td>
+                        <td class='text-right'>310.00</td>
+                        <td class='text-right'>315.00</td>
+                        <td class='text-right'>51,218</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=BPCL'
+                                title='BPCL (Butwal Power Company Limited)'>BPCL</a></td>
+                        <td class='text-right'>417.00</td>
+                        <td class='text-right'>200</td>
+                        <td class='text-right'>0.97</td>
+                        <td class='text-right'>419.00</td>
+                        <td class='text-right'>412.00</td>
+                        <td class='text-right'>413.00</td>
+                        <td class='text-right'>62,439</td>
+                    </tr>
+                    <tr class='nochange-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CBBL'
+                                title='CBBL (Chhimek Laghubitta Bittiya Sanstha Limited)'>CBBL</a></td>
+                        <td class='text-right'>1,780.00</td>
+                        <td class='text-right'>86</td>
+                        <td class='text-right'>0</td>
+                        <td class='text-right'>1,797.00</td>
+                        <td class='text-right'>1,776.00</td>
+                        <td class='text-right'>1,797.00</td>
+                        <td class='text-right'>22,262</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CBL'
+                                title='CBL (Civil Bank Ltd)'>CBL</a></td>
+                        <td class='text-right'>239.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>-0.83</td>
+                        <td class='text-right'>245.00</td>
+                        <td class='text-right'>238.00</td>
+                        <td class='text-right'>245.00</td>
+                        <td class='text-right'>150,661</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CCBL'
+                                title='CCBL (Century Commercial Bank Ltd.)'>CCBL</a></td>
+                        <td class='text-right'>245.00</td>
+                        <td class='text-right'>38</td>
+                        <td class='text-right'>-0.41</td>
+                        <td class='text-right'>247.00</td>
+                        <td class='text-right'>244.00</td>
+                        <td class='text-right'>247.00</td>
+                        <td class='text-right'>107,489</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CFCL'
+                                title='CFCL (Central Finance Co. Ltd.)'>CFCL</a></td>
+                        <td class='text-right'>251.00</td>
+                        <td class='text-right'>500</td>
+                        <td class='text-right'>9.13</td>
+                        <td class='text-right'>252.00</td>
+                        <td class='text-right'>231.00</td>
+                        <td class='text-right'>232.00</td>
+                        <td class='text-right'>118,273</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CGH'
+                                title='CGH (Chandragiri Hills Limited)'>CGH</a></td>
+                        <td class='text-right'>1,820.00</td>
+                        <td class='text-right'>20</td>
+                        <td class='text-right'>-1.62</td>
+                        <td class='text-right'>1,850.00</td>
+                        <td class='text-right'>1,819.00</td>
+                        <td class='text-right'>1,836.00</td>
+                        <td class='text-right'>18,252</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CHCL'
+                                title='CHCL (Chilime Hydropower Company Limited)'>CHCL</a></td>
+                        <td class='text-right'>640.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>0.63</td>
+                        <td class='text-right'>650.00</td>
+                        <td class='text-right'>638.00</td>
+                        <td class='text-right'>638.00</td>
+                        <td class='text-right'>54,320</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CHL'
+                                title='CHL (Chhyangdi Hydropower Ltd.)'>CHL</a></td>
+                        <td class='text-right'>346.00</td>
+                        <td class='text-right'>1,000</td>
+                        <td class='text-right'>-1.98</td>
+                        <td class='text-right'>356.00</td>
+                        <td class='text-right'>343.00</td>
+                        <td class='text-right'>353.00</td>
+                        <td class='text-right'>35,616</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CIT'
+                                title='CIT (Citizen Investment Trust)'>CIT</a></td>
+                        <td class='text-right'>3,903.00</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>-0.43</td>
+                        <td class='text-right'>3,949.00</td>
+                        <td class='text-right'>3,900.00</td>
+                        <td class='text-right'>3,925.00</td>
+                        <td class='text-right'>13,968</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CLBSL'
+                                title='CLBSL (Civil Laghubitta Bittiya Sanstha Ltd.)'>CLBSL</a></td>
+                        <td class='text-right'>1,462.00</td>
+                        <td class='text-right'>255</td>
+                        <td class='text-right'>-1.94</td>
+                        <td class='text-right'>1,550.00</td>
+                        <td class='text-right'>1,462.00</td>
+                        <td class='text-right'>1,470.00</td>
+                        <td class='text-right'>17,690</td>
+                    </tr>
+                    <tr class='nochange-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CMF1'
+                                title='CMF1 (Citizens Mutual Fund -1)'>CMF1</a></td>
+                        <td class='text-right'>10.70</td>
+                        <td class='text-right'>1,000</td>
+                        <td class='text-right'>0</td>
+                        <td class='text-right'>10.80</td>
+                        <td class='text-right'>10.54</td>
+                        <td class='text-right'>10.70</td>
+                        <td class='text-right'>18,600</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CMF2'
+                                title='CMF2 (CITIZENS MUTUAL FUND 2)'>CMF2</a></td>
+                        <td class='text-right'>11.33</td>
+                        <td class='text-right'>500</td>
+                        <td class='text-right'>-0.18</td>
+                        <td class='text-right'>11.43</td>
+                        <td class='text-right'>11.21</td>
+                        <td class='text-right'>11.21</td>
+                        <td class='text-right'>23,252</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CORBL'
+                                title='CORBL (Corporate Development Bank Limited)'>CORBL</a></td>
+                        <td class='text-right'>667.00</td>
+                        <td class='text-right'>36</td>
+                        <td class='text-right'>-0.6</td>
+                        <td class='text-right'>680.00</td>
+                        <td class='text-right'>666.00</td>
+                        <td class='text-right'>672.00</td>
+                        <td class='text-right'>5,044</td>
+                    </tr>
+                    <tr class='nochange-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=CZBIL'
+                                title='CZBIL (Citizen Bank International Limited)'>CZBIL</a></td>
+                        <td class='text-right'>312.00</td>
+                        <td class='text-right'>2,000</td>
+                        <td class='text-right'>0</td>
+                        <td class='text-right'>313.00</td>
+                        <td class='text-right'>310.00</td>
+                        <td class='text-right'>313.00</td>
+                        <td class='text-right'>65,574</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=DDBL'
+                                title='DDBL (Deprosc Laghubitta Bittiya Sanstha Limited)'>DDBL</a></td>
+                        <td class='text-right'>1,789.00</td>
+                        <td class='text-right'>80</td>
+                        <td class='text-right'>-0.56</td>
+                        <td class='text-right'>1,850.00</td>
+                        <td class='text-right'>1,788.00</td>
+                        <td class='text-right'>1,850.00</td>
+                        <td class='text-right'>15,815</td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=DHPL'
+                                title='DHPL (Dibyashwori Hydropower Ltd.)'>DHPL</a></td>
+                        <td class='text-right'>187.00</td>
+                        <td class='text-right'>370</td>
+                        <td class='text-right'>10</td>
+                        <td class='text-right'>187.00</td>
+                        <td class='text-right'>174.00</td>
+                        <td class='text-right'>178.00</td>
+                        <td class='text-right'>130,829</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=EBL'
+                                title='EBL (Everest Bank Limited)'>EBL</a></td>
+                        <td class='text-right'>722.00</td>
+                        <td class='text-right'>23</td>
+                        <td class='text-right'>-0.55</td>
+                        <td class='text-right'>729.00</td>
+                        <td class='text-right'>721.00</td>
+                        <td class='text-right'>726.00</td>
+                        <td class='text-right'>28,012</td>
+                        <td>
+                    </tr>
+                    <tr class='increase-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=EDBL'
+                                title='EDBL (Excel Development Bank Ltd.)'>EDBL</a></td>
+                        <td class='text-right'>542.00</td>
+                        <td class='text-right'>50</td>
+                        <td class='text-right'>0.93</td>
+                        <td class='text-right'>550.00</td>
+                        <td class='text-right'>537.00</td>
+                        <td class='text-right'>545.00</td>
+                        <td class='text-right'>14,098</td>
+                    </tr>
+                    <tr class='decrease-row'>
+                        <td><a target='_blank' href='/CompanyDetail.aspx?symbol=EIC'
+                                title='EIC (Everest Insurance Co. Ltd.)'>EIC</a></td>
+                        <td class='text-right'>723.00</td>
+                        <td class='text-right'>50</td>
+                        <td class='text-right'>-0.69</td>
+                        <td class='text-right'>735.00</td>
+                        <td class='text-right'>721.00</td>
+                        <td class='text-right'>735.00</td>
+                        <td class='text-right'>14,683</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+    <footer>
+        <div class="footer">
+            <h6>Stay Connected To US</h6>
+
+
+            <a href="" target="_blank"><img alt="facebook"
+                    src="{%static 'user_registration/style/img/facebook.png'%}"></a>
+
+            <a href="" target="_blank"><img alt="twitter"
+                    src="{%static 'user_registration/style/img/youtube.png'%}"></a>
+
+            <a href="" target="_blank"><img alt="youtube"
+                    src="{%static 'user_registration/style/img/instagram.png'%}"></a>
+
+            <a href="" target="_blank"><img alt="instagram"
+                    src="{%static 'user_registration/style/img/twitter.png'%}"></a>
+
+            <a href="" target="_blank"><img alt="pinterest"
+                    src="{%static 'user_registration/style/img/pinterest.png'%}"></a>
+
+
+        </div>
+        <div class="void">
+            <h4>&copy;Share Market, Kathmandu 44600</h4>
+            <h5>&copy;Email ShareMarket.org.np</h5>
+            Phone +977 9803428358
+        </div>
+        <div class="right">
+            <h3>&copy;Copyright,2021,Share</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

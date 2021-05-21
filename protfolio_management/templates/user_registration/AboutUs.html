@@ -3,68 +3,146 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="{%static 'user_registration/style/AboutUs.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<title>Share Market</title>
-	<link rel="stylesheet" type="text/css" href="{%static 'user_registration/style/AboutUs.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%static 'user_registration/style/News.css' %}">
 </head>
 <body>
 	<header>
-	<nav>
-        <div class="logo">
-            <h1><img src="{%static 'user_registration/assets/vvv.jpg' %}">Stock M</h1>
+    <nav>
+      <div class="logo">
+          <h4><img src="{%static 'user_registration/style/img/vvv.jpg' %}">Stock M</h4>
 </div>
-        <div class="menu">
-            <ul>
-                <li><a href="../">HOME</a></li>
-               
-                <li><a href="../help">HELP</a></li>
-                <li><a href="../aboutus">About Us</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+          
+      
+				<a href="/" >Home</a>
+				<a href="/news" >NEWS</a>
+				<a href="/applyipo">Help</a>
+				<a href="/about" class="active">About Us</a>
+				<a href="/ltp">LTP</a>
+				<a href="/broker">BROKER HOUSE</a>
+
+              
+
 </div>
 </nav>
-	<div class="wrapper">
-		<h1>About Us</h1>
-		<h2>This system has been designed to provide user a friendly environment with access to all our features and also ensures the satisfaction of a user and guides them to each and every points of the system. </h2>
+</header>
 
-		<div class="team"
-		>
+<!-- Content -->
+
+<div class="wrapper">
+  <h1>About Us</h1>
+  <h2>This system has been designed to provide user a friendly environment with access to all our features and also
+    ensures the satisfaction of a user and guides them to each and every points of the system. </h2>
+
+  <div class="team">
     <div class="team_member">
-    	<div class="team_img">
-        <img src="{%static 'user_registration/assets/pic1.jpg' %}">
+      <div class="team_img">
+        <img src="{%static 'user_registration/style/img/pic1.jpg' %}">
       </div>
       <h3>Rajat Budhathoki</h3>
       <p class="role">Project Manager</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      <p>A project manager is the person responsible for leading a project from its inception to execution. This
+        includes planning, execution and managing the people, resources and scope of the project. ... The project
+        manager has full responsibility and authority to complete the assigned project.</p>
     </div>
 
 
     <div class="team_member">
       <div class="team_img">
-        <img src="{%static 'user_registration/assets/pic2.jpg' %}">
+        <img src="{%static 'user_registration/style/img/pic2.jpg' %}">
       </div>
       <h3>Ashim Thapa</h3>
       <p class="role">Business Analyst</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
-  </div>
+      <p>A business analyst (BA) is a person who analyzes an organization or business domain (real or hypothetical)
+        and documents its business, processes, or systems, assessing the business model or its integration with
+        technology. Business Analyst helps in guiding businesses in improving processes, products, services, and
+        software through data analysis.</p>
+    </div>
 
 
     <div class="team_member">
       <div class="team_img">
-        <img src="{%static 'user_registration/assets/pic3.jpg' %}">
+        <img src="{%static 'user_registration/style/img/pic3.jpg' %}">
       </div>
       <h3>Saurav Kunwar</h3>
       <p class="role">Frontend Developer</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+      <p>A front-end developer architects and develops websites and applications using web technologies (i.e., HTML,
+        CSS, DOM, and JavaScript), which run on the Open Web Platform or act as compilation input for non-web platform
+        environments (i.e., React Native).</p>
     </div>
 
-
- <div class="team_member">
-      <div class="team_img">
-        <img src="{%static 'user_registration/assets/pic4.jpg' %}">
+    <div class="team">
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{%static 'user_registration/style/img/jugal.jpg' %}">
+        </div>
+        <h3>Jugal</h3>
+        <p class="role">Frontend Developer</p>
+        <p>A front-end developer architects and develops websites and applications using web technologies (i.e., HTML,
+          CSS, DOM, and JavaScript), which run on the Open Web Platform or act as compilation input for non-web
+          platform environments (i.e., React Native).</p>
       </div>
-      <h3>Pragik Karki</h3>
-      <p class="role">Backend Developer</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+
+
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{%static 'user_registration/style/img/pic4.jpg' %}">
+        </div>
+        <h3>Pragik Karki</h3>
+        <p class="role">Backend Developer</p>
+        <p>The Backend Developer is responsible for managing the interchange of data between the site/software users
+          and servers. ... The Backend Developer is responsible for the integration of frontend elements built by the
+          frontend teams, hence, requiring that he have a basic understanding of frontend technologies.</p>
+      </div>
+
+
+
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{%static 'user_registration/style/img/Gyurmay.jpg' %}">
+        </div>
+        <h3>Gyurmay Dorje</h3>
+        <p class="role">Backend Developer</p>
+        <p>The Backend Developer is responsible for managing the interchange of data between the site/software users
+          and servers. ... The Backend Developer is responsible for the integration of frontend elements built by the
+          frontend teams, hence, requiring that he have a basic understanding of frontend technologies.</p>
+
+
+      </div>
     </div>
+</body>
+           <!--  end of the content-->
+<footer>
+                        <div class="footer">
+                   <h6>Stay Connected</h6>
+              
+			<a href="" target="_blank"><img alt="facebook" src="{%static 'user_registration/style/img/facebook.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="twitter" src="{%static 'user_registration/style/img/youtube.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="youtube" src="{%static 'user_registration/style/img/instagram.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="instagram" src="{%static 'user_registration/style/img/twitter.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="pinterest" src="{%static 'user_registration/style/img/pinterest.png'%}"></a>
+
+                 </div>
+                 <div class="void">
+                     <h4>&copy;Share Market, Kathmandu 44600</h4>
+               <h5>&copy;Email ShareMarket.org.np</h5>
+               Phone +977 9803428358</div>
+                       <div class="right">
+                       <h3>&copy;Copyright,2021,Share</h3>
+                       </div>
+                   </footer>
 
 
-  </div>
+    
+    
+    </body>
+    </html>

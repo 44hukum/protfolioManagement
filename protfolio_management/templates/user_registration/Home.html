@@ -1,63 +1,125 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Share Market</title>
 	<link rel="stylesheet" type="text/css" href="{%static 'user_registration/style/style.css' %}">
 </head>
-<style>
-	body{
-		
-		background-image: url('{%static "user_registration/assets/1.png" %}');
-	}
-</style>
+
 <body>
-    <header>
-	<nav>
-        <div class="logo">
-            <h1><img src="{%static 'user_registration/assets/vvv.jpg' %}">Stock M</h1>
-</div>
-        <div class="menu">
-            <ul>
-                <li><a href="">HOME</a></li>
-               
-                <li><a href="/help">HELP</a></li>
-                <li><a href="/aboutus">About Us</a></li>
-</ul>
-</div>
-</nav>
+	<header class="siteheaders">
+		<nav>
+			<div class="logo">
+				<h1><img src="{%static 'user_registration/style/img/vvv.jpg' %}">Stock M</h1>
+			</div>
+			<div class="topnav" id="myTopnav">
 
-	<div class= "loginbox">
+				<a href="/" class="active">Home</a>
+				<a href="/news">NEWS</a>
+				<a href="/applyipo">Help</a>
+				<a href="/about">About Us</a>
+				<a href="/ltp">LTP</a>
+				<a href="/broker">BROKER HOUSE</a>
 
-    <img src= "{%static 'user_registration/assets/icon.jpg'%}" class="login">
-    <h1>Sign In</h1>
-    <form>
-    	<p>Username</p>
-    	<input type="Number" name="" placeholder="Enter Username">
-    	<p>Password</p>
-    	<input type="Password" name="" placeholder="Enter Password">
+			</div>
+		</nav>
+		<section>
+			<div class="leftside">
+				<h1>"An Important key to investing is to remember that stocks are not lottery tickets."</h1>
+				<h2>-Peter Lynch</h2>
 
-    	<input type="Submit" name="" placeholder="Login">
-    <div class="Guide">
-    	<a href="/dmatacc">Don't have an account?</a>
-    </div>
+			</div>
+		</section>
 
-    	<div class="h2">
-    		<h3>OR</h3>
-    	</div>
-    	<button class="social google">Login with Google</button>
-    </form>
-	</div>
+		<div class="loginbox">
 
-	<div>
-		<div class="leftside">
-			<h1>"An Important key to investing is to remember that stocks are not lottery tickets."</h1>
-			<h2>-Peter Lynch</h2>
-			
-	</div>
-</div></header>
+			<img src="{%static 'user_registration/style/img/icon.jpg'%}" class="login">
+
+			<!-- for login is the user is alreadyregistered -->
+			{% if signup %}
+			<h1>Sign up</h1>
+			<form action="signup" method="POST">
+				{% csrf_token %}
+				<p>username</p>
+				<input type="text" name="username" placeholder="Enter Username">
+				<p>Email</p>
+				<input type="text" name="email" placeholder="Enter Email" required>
+				<p>Password</p>
+				<input type="Password" name="password" placeholder="Enter Password">
+				<p>confirm-passowrd</p>
+				<input type="Password" name="confirm-password" placeholder="Enter Password">
+				<input type="Submit" name="" placeholder="Login">
+				<div class="Guide">
+					<a href="/dmatacc">Already have an account?</a>
+				</div>
+
+				
+				
+			</form>
+
+			<a href="/login"><button type="link" class="social google">Login</button></a>
+
+			{% else %}
+			<h1>Login</h1>
+			 	{% if au %}
+			 		<p>
+			 			Error login
+					 </p>
+					 {% endif %}
+			<form action="/login" method="POST">
+				{% csrf_token %}
+				<p>Username</p>
+				<input type="text" name="username" placeholder="Enter username" autocomplete="off">
+				<p>Password</p>
+				<input type="Password" name="password" placeholder="Enter Password">
+
+				<input type="Submit" name="" placeholder="Login">
+				<div class="Guide">
+					<a href="/dmatacc">Don't have an account?</a>
+				</div>
+
+				<div class="h2">
+					<h3>OR</h3>
+				</div>
+				
+			</form>
+
+			<a href="/signup" ><button type=link" class="social google">Sign up</button></a>
+				{% endif %}
+		
+		</div>
+		<!-- END OF THE LOGIN BOX -->
 
 
 
+	</header>
+	<footer>
+		<div class="footer">
+			<h6>Stay Connected To US</h6>
+
+			<a href="" target="_blank"><img alt="facebook" src="{%static 'user_registration/style/img/facebook.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="twitter" src="{%static 'user_registration/style/img/youtube.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="youtube" src="{%static 'user_registration/style/img/instagram.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="instagram" src="{%static 'user_registration/style/img/twitter.png'%}"></a>
+
+			<a href="" target="_blank"><img alt="pinterest" src="{%static 'user_registration/style/img/pinterest.png'%}"></a>
+
+		</div>
+		<div class="void">
+			<h4>&copy;Share Market, Kathmandu 44600</h4>
+			<h5>&copy;Email ShareMarket.org.np</h5>
+			Phone +977 9803428358
+		</div>
+		<div class="right">
+			<h3>&copy;Copyright,2021,Share</h3>
+		</div>
+	</footer>
 </body>
+
+
 </html>
